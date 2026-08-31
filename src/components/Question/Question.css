@@ -1,0 +1,57 @@
+/* adds a separating line between each question */
+/* applies the line below every question, except for the last one */
+.question:not(:nth-last-of-type(1))::after {
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  border: 0;
+  margin: 0.8rem 0;
+  padding: 0;
+  content: "";
+}
+
+.answer-input {
+  position: absolute;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.answer-input:checked+label {
+  background-color: #D6DBF5;
+}
+
+.question-text {
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.answer-container {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.answer-label {
+  padding: 0.4rem;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+input:not(.final-checked)+.finished {
+  opacity: 50%;
+}
+
+input.correct+.finished, input.incorrect.final-checked+.finished {
+  border: 1px solid transparent;
+}
+
+input.correct+.finished {
+  background-color: rgb(171, 255, 46);
+}
+
+input.incorrect.final-checked+.finished {
+  background-color: #df4343;
+  color: var(--background-color);
+}

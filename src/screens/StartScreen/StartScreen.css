@@ -1,0 +1,63 @@
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 50%;
+}
+
+.input-main-label {
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 7px;
+    background-color: var(--background-color);
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.input-field > option, .input-radio > label, .input-field {
+    font-size: 0.9rem;
+}
+
+/* removing default styling */
+fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+}
+
+.input-radio label {
+    margin-left: 4px;
+}
+
+.start-quiz-btn {
+    padding: 0.8rem 2.4rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+}
