@@ -1,5 +1,14 @@
-# Quizzical: quiz answering game, made with the Open Trivia DB API
+# Quizzical
+Simple quiz answering game, made with React and the [Open Trivia DB API](https://opentdb.com/), project idea from Scrimba's React course
 
-- Simple React project, 100% human-written code, project idea from Scrimba's React course
-- Uses the Open Trivia Database API: https://opentdb.com/
-- Scaffolded with Vite: https://vite.dev/
+## Tech stack
+- Vite + React
+- Vanilla HTML/CSS/Javascript
+
+## How to run locally
+```
+git clone https://github.com/ken24git/quizzical.git
+cd quizzical
+npm install
+npm run dev
+```
